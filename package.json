@@ -1,0 +1,38 @@
+{
+  "name": "dsh-tts",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin: text-to-speech via an OpenAI-compatible /audio/speech endpoint. Adds a speaker button under every assistant reply, a global auto-read toggle beside the composer, and a header chip with settings.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "plugin",
+    "tts",
+    "speech",
+    "read-aloud"
+  ],
+  "license": "MIT",
+  "author": "cuteG41cute",
+  "dependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  }
+}
