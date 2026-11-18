@@ -1,4 +1,4 @@
-# install.ps1 — dsh-tts 一键安装（Windows）
+﻿# install.ps1 — dsh-tts 一键安装（Windows）
 # 做两件事：① 复制包到 ~/.dsh/profiles/web/node_modules/dsh-tts
 #           ② 在 ~/.dsh/profiles/web/cordis.patch.yml 追加接线块（幂等）
 $ErrorActionPreference = "Stop"
